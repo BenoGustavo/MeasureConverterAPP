@@ -1,16 +1,15 @@
-import { useState } from 'react'
+import { Header } from './components/header/Header'
+import { Wrapper } from './Styles'
+import { Body } from './components/body/Body'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className="card">
-        <h1>Hello world!</h1>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <Wrapper>
+        <Header />
+        <Body />
+      </Wrapper>
     </>
   )
 }
