@@ -70,8 +70,6 @@ export const Body: React.FC = () => {
 
             const result: ApiResponse = await toUnitsResponse.json();
 
-            console.log(result, `http://localhost:8080/api/convert/toUnits?fromUnits=${SelectedFromUnit}&type=${ActualType}`)
-
             setToUnits(result);
             setSelectedToUnit(result.data[1]);
 
