@@ -1,10 +1,12 @@
 import React from "react";
-import { HeaderContainer, HeaderTitle } from "./Styles";
+import { HeaderContainer, HeaderTitle, HeaderWrapper } from "./Styles";
 
 export const Header: React.FC = () => {
     return (
         <HeaderContainer>
-            <HeaderTitle>measure converter</HeaderTitle>
+            <HeaderWrapper>
+                <HeaderTitle>measure converter</HeaderTitle>
+            </HeaderWrapper>
         </HeaderContainer>
     )
 }
