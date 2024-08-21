@@ -1,15 +1,23 @@
 import { Header } from './components/header/Header'
-import { Wrapper } from './Styles'
+import { Background, Wrapper } from './Styles'
 import { Body } from './components/body/Body'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Wrapper>
-        <Body />
-      </Wrapper>
+      <Provider store={store}>
+        <Background>
+          <Header />
+
+          <Wrapper>
+            <Body />
+          </Wrapper>
+        </Background>
+
+      </Provider>
     </>
   )
 }

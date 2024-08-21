@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
+    margin: 0 2rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #33414e92;
     height: 80vh;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.337);
 `;
 
 export const FromToContainer = styled.div`
@@ -76,7 +81,7 @@ export const ConvertedValueContainer = styled.div`
 
     min-width: 260px;
     height: 5rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     background-color: #667391;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.337);
