@@ -110,11 +110,21 @@ export const Body: React.FC = () => {
                     error ? (
                         <ConvertionError>{convertedValue?.error.message}</ConvertionError>
                     ) : (
-                        <ConvertedValue>
-                            {convertedValue?.data?.result === undefined || isNaN(parseFloat(convertedValue?.data?.result))
-                                ? `0 ${selectedToUnit?.toUpperCase()}`
-                                : `${convertedValue?.data?.result} ${selectedToUnit?.toUpperCase()}`}
-                        </ConvertedValue>
+                    <ConvertedValue>
+                        {convertedValue?.data?.result === undefined || isNaN(parseFloat(convertedValue?.data?.result))
+                            ? (
+                                <>
+                                    <span>0</span>
+                                    <div>{selectedToUnit?.toUpperCase()}</div>
+                                </>
+                            ) : (
+                                <>
+                                    <span>{convertedValue?.data?.result}</span>
+                                    <div>{selectedToUnit?.toUpperCase()}</div>
+                                </>
+                            )
+                        }
+                    </ConvertedValue>
                     )
                 )}
             </ConvertedValueContainer>

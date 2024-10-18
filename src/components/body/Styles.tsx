@@ -98,4 +98,8 @@ export const ConvertedValue = styled.h3`
     color: #D5FAFD;
     font-size: 1.5rem;
     background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.5rem;
 `;
